@@ -1,44 +1,5 @@
 require 'pry'
 
-peeps = {
-  "season 19":[
-     {
-        "name":"Ashley Iaconetti",
-        "age":"26",
-        "hometown":"Great Falls, Virginia",
-        "occupation":"Nanny/Freelance Journalist",
-        "status":""
-     },
-     {
-        "name":"Becca Tilley",
-        "age":"26",
-        "hometown":"Shreveport, Louisiana[b]",
-        "occupation":"Chiropractic Assistant",
-        "status":""
-     },
-     {
-        "name":"Britt Nilsson",
-        "age":"27",
-        "hometown":"Hollywood, California",
-        "occupation":"Waitress",
-        "status":""
-     },
-     {
-        "name":"Carly Waddell",
-        "age":"29",
-        "hometown":"Arlington, Texas",
-        "occupation":"Cruise Ship Singer",
-        "status":""
-     },
-     {
-        "name":"Jade Roper",
-        "age":"28",
-        "hometown":"Los Angeles, California",
-        "occupation":"Cosmetics Developer",
-        "status":""
-     }
-    ]
-  }
 
 def all_contestants(data)
   data.values.flatten
@@ -49,14 +10,6 @@ def all_hometowns(data)
     contestant["hometown"]
   end
 end
-
-# def all_ages_season(data, season)
-#   data.flatten[season].map do |contestant|
-#     contestant["age"].to_i
-#   end
-# end
-
-
 
 def get_first_name_of_season_winner(data, season)
   data[season].find do |contestant|
